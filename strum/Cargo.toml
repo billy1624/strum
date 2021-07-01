@@ -25,6 +25,7 @@ travis-ci = { repository = "Peternator7/strum" }
 
 [features]
 derive = ["strum_macros"]
+sea-orm = ["strum_macros/sea-orm"]
 
 [package.metadata.docs.rs]
 features = ["derive"]

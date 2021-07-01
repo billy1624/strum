@@ -99,7 +99,14 @@ impl StrumTypeProperties {
         if let Some(path) = &self.crate_path {
             parse_quote!(#path)
         } else {
-            parse_quote!(::strum)
+            #[cfg(feature = "sea-orm")]
+            {
+                parse_quote!(sea_orm::strum)
+            }
+            #[cfg(not(feature = "sea-orm"))]
+            {
+                parse_quote!(::strum)
+            }
         }
     }
 }
