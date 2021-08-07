@@ -1,5 +1,5 @@
 [package]
-name = "strum"
+name = "sea-strum"
 version = "0.21.0"
 edition = "2018"
 authors = ["Peter Glotfelty <peter.glotfelty@microsoft.com>"]
@@ -15,17 +15,17 @@ repository = "https://github.com/Peternator7/strum"
 readme = "../README.md"
 
 [dependencies]
-strum_macros = { path = "../strum_macros", optional = true, version = "0.21" }
+sea-strum_macros = { path = "../strum_macros", optional = true, version = "0.21" }
 
 [dev-dependencies]
-strum_macros = { path = "../strum_macros", version = "0.21" }
+sea-strum_macros = { path = "../strum_macros", version = "0.21" }
 
 [badges]
 travis-ci = { repository = "Peternator7/strum" }
 
 [features]
-derive = ["strum_macros"]
-sea-orm = ["strum_macros/sea-orm"]
+derive = ["sea-strum_macros"]
+sea-orm = ["sea-strum_macros/sea-orm"]
 
 [package.metadata.docs.rs]
 features = ["derive"]

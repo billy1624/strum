@@ -1,8 +1,9 @@
 [package]
-name = "strum_tests"
+name = "sea-strum_tests"
 version = "0.21.0"
 edition = "2018"
 authors = ["Peter Glotfelty <peglotfe@microsoft.com>"]
+publish = false
 
 [dependencies]
 strum = { path = "../strum", features = ["derive"] }
