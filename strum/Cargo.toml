@@ -10,8 +10,8 @@ keywords = ["enum", "string", "macros", "proc-macros"]
 categories = ["development-tools::procedural-macro-helpers", "parsing"]
 
 documentation = "https://docs.rs/strum"
-homepage = "https://github.com/Peternator7/strum"
-repository = "https://github.com/Peternator7/strum"
+homepage = "https://github.com/SeaQL/strum"
+repository = "https://github.com/SeaQL/strum"
 readme = "../README.md"
 
 [dependencies]
