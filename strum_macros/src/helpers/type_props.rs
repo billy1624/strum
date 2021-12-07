@@ -101,7 +101,7 @@ impl StrumTypeProperties {
         } else {
             #[cfg(feature = "sea-orm")]
             {
-                parse_quote!(sea_orm::sea_strum)
+                parse_quote!(sea_orm::strum)
             }
             #[cfg(not(feature = "sea-orm"))]
             {

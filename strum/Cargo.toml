@@ -14,6 +14,10 @@ homepage = "https://github.com/SeaQL/strum"
 repository = "https://github.com/SeaQL/strum"
 readme = "../README.md"
 
+[lib]
+name = "strum"
+path = "src/lib.rs"
+
 [dependencies]
 sea-strum_macros = { path = "../strum_macros", optional = true, version = "0.21" }
 
